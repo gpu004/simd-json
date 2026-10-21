@@ -44,6 +44,8 @@ core_affinity = { version = "0.8" }
 [target.'cfg(not(target_family = "wasm"))'.dev-dependencies]
 criterion = { version = "0.8" }
 proptest = "1.0"
+hegeltest = "0.50"
+serde_json = { version = "1", features = ["float_roundtrip"] }
 
 [lib]
 bench = false
